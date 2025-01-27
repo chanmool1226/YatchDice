@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요트다이스 점수표</title>
+    <link rel="stylesheet" href="yatch-style.css"
+</head>
+<body>
+    <table id="yatch-table">
+        <thead class="player-table">
+            <tr>
+                <th style="border-left: 1px solid white;; border-top: 1px solid white;; width:150px;"><img src="요트다이스.jpg" alt="logo" style="width: 150px; height: 45px;"></th>
+                <th class="bold-left bold-top">Game #1</th>
+                <th class="bold-top">Game #2</th>
+                <th class="bold-top">Game #3</th>
+                <th class="bold-right bold-top">Game #4</th>
+            </tr>
+        </thead>
+        <tr>
+            <td class="bold-left bold-top"><img src="1.jpg" alt="1" style="width:20px; height:20px; margin-left: 10px; margin-right: 10px; vertical-align: middle;">에이스</td>
+            <td><input type="number" class="group-1-1"></td>
+            <td><input type="number" class="group-2-1"></td>
+            <td><input type="number" class="group-3-1"></td>
+            <td class="bold-right"><input type="number" class="group-4-1"></td>
+        </tr>
+        <tr>
+            <td class="bold-left"><img src="2.jpg" alt="2" style="width:20px; height:20px; margin-left: 10px; margin-right: 10px; vertical-align: middle;">듀얼</td>
+            <td><input type="number" class="group-1-1"></td>
+            <td><input type="number" class="group-2-1"></td>
+            <td><input type="number" class="group-3-1"></td>
+            <td class="bold-right"><input type="number" class="group-4-1"></td>
+        </tr>
+        <tr>
+            <td class="bold-left"><img src="3.jpg" alt="3" style="width:20px; height:20px; margin-left: 10px; margin-right: 10px; vertical-align: middle;">트리플</td>
+            <td><input type="number" class="group-1-1"></td>
+            <td><input type="number" class="group-2-1"></td>
+            <td><input type="number" class="group-3-1"></td>
+            <td class="bold-right"><input type="number" class="group-4-1"></td>
+        </tr>
+        <tr>
+            <td class="bold-left"><img src="4.jpg" alt="4" style="width:20px; height:20px; margin-left: 10px; margin-right: 10px; vertical-align: middle;">쿼드</td>
+            <td><input type="number" class="group-1-1"></td>
+            <td><input type="number" class="group-2-1"></td>
+            <td><input type="number" class="group-3-1"></td>
+            <td class="bold-right"><input type="number" class="group-4-1"></td>
+        </tr>
+        <tr>
+            <td class="bold-left"><img src="5.jpg" alt="5" style="width:20px; height:20px; margin-left: 10px; margin-right: 10px; vertical-align: middle;">펜타</td>
+            <td><input type="number" class="group-1-1"></td>
+            <td><input type="number" class="group-2-1"></td>
+            <td><input type="number" class="group-3-1"></td>
+            <td class="bold-right"><input type="number" class="group-4-1"></td>
+        </tr>
+        <tr>
+            <td class="bold-left"><img src="6.jpg" alt="6" style="width:20px; height:20px; margin-left: 10px; margin-right: 10px; vertical-align: middle;">헥사</td>
+            <td><input type="number" class="group-1-1"></td>
+            <td><input type="number" class="group-2-1"></td>
+            <td><input type="number" class="group-3-1"></td>
+            <td class="bold-right"><input type="number" class="group-4-1"></td>
+        </tr>
+        <tr>
+            <td class="explain only-text bold-left" style="font-size: 10px; height: 15px; border-bottom: 1px solid red; vertical-align: bottom;">상단 점수의 합이 63점 이상이라면</td>
+            <td style="font-size: 10px; height: 15px; text-align: right; padding-right: 7px;"><span id="group-1-1-sum" class="verify63-1">0</span>/63&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#40<span id="points-needed-1">63</span>&#41</td>
+            <td style="font-size: 10px; height: 15px; text-align: right; padding-right: 7px;"><span id="group-2-1-sum" class="verify63-2">0</span>/63&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#40<span id="points-needed-2">63</span>&#41</td>
+            <td style="font-size: 10px; height: 15px; text-align: right; padding-right: 7px;"><span id="group-3-1-sum" class="verify63-3">0</span>/63&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#40<span id="points-needed-3">63</span>&#41</td>
+            <td class="bold-right" style="font-size: 10px; height: 15px; text-align: right; padding-right: 7px;"><span id="group-4-1-sum" class="verify63-4">0</span>/63&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#40<span id="points-needed-4">63</span>&#41</td>
+        </tr>
+        <tr>
+            <td class="explain only-text bold-left bold-bottom" style="border-top: 1px solid red;">상단 보너스 +35점</td>
+            <td class="bold-bottom" style="text-align: center;"><span id="add35Points-1">0</span></td>
+            <td class="bold-bottom" style="text-align: center;"><span id="add35Points-2">0</span></td>
+            <td class="bold-bottom" style="text-align: center;"><span id="add35Points-3">0</span></td>
+            <td class="bold-right bold-bottom" style="text-align: center;"><span id="add35Points-4">0</span></td>
+        </tr>
+        <tr style="border-left: solid white; border-right: solid white;">
+            <td style="height: 5px; border: 0;"></td>
+        </tr>
+        <tr>
+            <td class="only-text bold-left bold-top bold-bottom">초이스</td>
+            <td class="bold-top bold-bottom"><input type="number" class="group-1-2"></td>
+            <td class="bold-top bold-bottom"><input type="number" class="group-2-2"></td>
+            <td class="bold-top bold-bottom"><input type="number" class="group-3-2"></td>
+            <td class="bold-right bold-top bold-bottom"><input type="number" class="group-4-2"></td>
+        </tr>
+        <tr style="border-left: solid white; border-right: solid white;">
+            <td style="height: 5px; border: 0;"></td>
+        </tr>
+        <tr>
+            <td class="bold-left bold-top" style="font-size: 12px;"><img src="1.jpg" alt="1"  style="width: 10px; height: 10px; margin-left: 5px;"><img src="1.jpg" alt="1"  style="width: 10px; height: 10px; margin-left: 7px;"><img src="1.jpg" alt="1"  style="width: 10px; height: 10px; margin-left: 7px;"><img src="1.jpg" alt="1"  style="width: 10px; height: 10px; margin-left: 7px; margin-right: 5px;">포커</td>
+            <td class="bold-top"><input type="number" class="group-1-2"></td>
+            <td class="bold-top"><input type="number" class="group-2-2"></td>
+            <td class="bold-top"><input type="number" class="group-3-2"></td>
+            <td class="bold-right bold-top"><input type="number" class="group-4-2"></td>
+        </tr>
+        <tr>
+            <td class="bold-left" style="font-size: 12px;"><img src="1.jpg" alt="1"  style="width: 10px; height: 10px; margin-left: 5px;"><img src="1.jpg" alt="1"  style="width: 10px; height: 10px; margin-left: 3px;"><img src="6.jpg" alt="6"  style="width: 10px; height: 10px; margin-left: 3px;"><img src="6.jpg" alt="6"  style="width: 10px; height: 10px; margin-left: 3px;"><img src="6.jpg" alt="6"  style="width: 10px; height: 10px; margin-left: 3px; margin-right: 5px;">풀 하우스</td>
+            <td><input type="number" class="group-1-2"></td>
+            <td><input type="number" class="group-2-2"></td>
+            <td><input type="number" class="group-3-2"></td>
+            <td class="bold-right"><input type="number" class="group-4-2"></td>
+        </tr>
+        <tr>
+            <td class="bold-left" style="font-size: 12px;"><img src="1.jpg" alt="1"  style="width: 10px; height: 10px; margin-left: 5px;"><img src="2.jpg" alt="2"  style="width: 10px; height: 10px; margin-left: 7px;"><img src="3.jpg" alt="3"  style="width: 10px; height: 10px; margin-left: 7px;"><img src="4.jpg" alt="4"  style="width: 10px; height: 10px; margin-left: 7px; margin-right: 5px;">스몰 스트레이트</td>
+            <td><input type="number" placeholder="15" class="group-1-2"></td>
+            <td><input type="number" placeholder="15" class="group-2-2"></td>
+            <td><input type="number" placeholder="15" class="group-3-2"></td>
+            <td class="bold-right"><input type="number" placeholder="15" class="group-4-2"></td>
+        </tr>
+        <tr>
+            <td class="bold-left" style="font-size: 12px;"><img src="1.jpg" alt="1"  style="width: 10px; height: 10px; margin-left: 5px;"><img src="2.jpg" alt="2"  style="width: 10px; height: 10px; margin-left: 3px;"><img src="3.jpg" alt="3"  style="width: 10px; height: 10px; margin-left: 3px;"><img src="4.jpg" alt="4"  style="width: 10px; height: 10px; margin-left: 3px;"><img src="5.jpg" alt="5"  style="width: 10px; height: 10px; margin-left: 3px; margin-right: 5px;">라지 스트레이트</td>
+            <td><input type="number" placeholder="30" class="group-1-2"></td>
+            <td><input type="number" placeholder="30" class="group-2-2"></td>
+            <td><input type="number" placeholder="30" class="group-3-2"></td>
+            <td class="bold-right"><input type="number" placeholder="30" class="group-4-2"></td>
+        </tr>
+        <tr>
+            <td class="bold-left" style="font-size: 12px;"><img src="6.jpg" alt="6"  style="width: 10px; height: 10px; margin-left: 5px;"><img src="6.jpg" alt="6"  style="width: 10px; height: 10px; margin-left: 3px;"><img src="6.jpg" alt="6"  style="width: 10px; height: 10px; margin-left: 3px;"><img src="6.jpg" alt="6"  style="width: 10px; height: 10px; margin-left: 3px;"><img src="6.jpg" alt="6"  style="width: 10px; height: 10px; margin-left: 3px; margin-right: 5px;">요트</td>
+            <td><input type="number" placeholder="50" class="group-1-2"></td>
+            <td><input type="number" placeholder="50" class="group-2-2"></td>
+            <td><input type="number" placeholder="50" class="group-3-2"></td>
+            <td class="bold-right"><input type="number" placeholder="50" class="group-4-2"></td>
+        </tr>
+        <tr>
+            <td class="explain only-text bold-left bold-bottom" style="height: 45px;">총점</td>
+            <td class="bold-bottom" style="font-size: 20px; text-align: center;"><span id="group-1-sum">0</span></td>
+            <td class="bold-bottom" style="font-size: 20px; text-align: center;"><span id="group-2-sum">0</span></td>
+            <td class="bold-bottom" style="font-size: 20px; text-align: center;"><span id="group-3-sum">0</span></td>
+            <td class="bold-right bold-bottom" style="font-size: 20px; text-align: center;"><span id="group-4-sum">0</span></td>
+        </tr>
+    </table>
+    <script src="calSum.js"></script>
+    <script src="add35.js"></script>
+</body>
+</html>
